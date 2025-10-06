@@ -153,7 +153,7 @@ create_iterm_windows() {
     # Create windows one by one using AppleScript
     for ((i = 1; i <= count; i++)); do
         # AppleScript to create new iTerm window and change to current directory
-        if osascript 2>/dev/null <<'EOF'; then
+        if osascript 2>/dev/null <<EOF; then
 tell application "iTerm"
     activate
     set newWindow to (create window with default profile)
