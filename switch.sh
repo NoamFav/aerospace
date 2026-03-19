@@ -1,24 +1,14 @@
 #!/bin/bash
 
-# Detect if 4K monitor is connected
 DISPLAY_INFO=$(system_profiler SPDisplaysDataType 2>/dev/null)
 
 if echo "$DISPLAY_INFO" | grep -q "3840 x 2160"; then
-    CONFIG="$HOME/.config/aerospace/aerospace-4k.toml"
+    cp ~/.config/aerospace/aerospace-monitor.toml ~/.config/aerospace/aerospace.toml
+    launchctl setenv SKETCHYBAR_MINIMAL 0
 else
-    CONFIG="$HOME/.config/aerospace/aerospace-laptop.toml"
+    cp ~/.config/aerospace/aerospace-laptop.toml ~/.config/aerospace/aerospace.toml
+    launchctl setenv SKETCHYBAR_MINIMAL 1
 fi
 
-# Symlink to the active config
-ln -sf "$CONFIG" "$HOME/.config/aerospace/aerospace.toml"
-
-# Reload AeroSpace
 aerospace reload-config
-
-if echo "$DISPLAY_INFO" | grep -q "3840 x 2160"; then
-    export SKETCHYBAR_MINIMAL=0
-else
-    export SKETCHYBAR_MINIMAL=1
-fi
-
-sketchybar --reload
+~/.config/sketchybar/sb.sh restart
