@@ -83,7 +83,7 @@ inner.vertical   = 8
 outer.left   = 8
 outer.right  = 8
 outer.bottom = 8
-outer.top    = 40
+outer.top    = 8
 
 
 # ===============================================================================
@@ -265,7 +265,7 @@ backspace = ['close-all-windows-but-current', 'mode main']  # Close all other wi
 # Join the current window with adjacent windows
 
 cmd-ctrl-alt-shift-h = ['join-with left', 'mode main']   # Join with window on the left
-cmd-ctrl-alt-shift-j = ['join-with down', 'mode main']   # Join with window below  
+cmd-ctrl-alt-shift-j = ['join-with down', 'mode main']   # Join with window below
 cmd-ctrl-alt-shift-k = ['join-with up', 'mode main']     # Join with window above
 cmd-ctrl-alt-shift-l = ['join-with right', 'mode main']  # Join with window on the right
 
@@ -275,7 +275,7 @@ cmd-ctrl-alt-shift-l = ['join-with right', 'mode main']  # Join with window on t
 # -------------------------------------------------------------------------------
 
 down       = 'volume down'              # Lower volume
-up         = 'volume up'                # Raise volume  
+up         = 'volume up'                # Raise volume
 shift-down = ['volume set 0', 'mode main']  # Mute and exit service mode
 
 
@@ -289,7 +289,7 @@ shift-down = ['volume set 0', 'mode main']  # Mute and exit service mode
 6 = 1
 7 = 1
 8 = 1
-9 = 1   
+9 = 1
 
 Q = 2
 w = 2
