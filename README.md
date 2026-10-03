@@ -1,34 +1,27 @@
 <div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=venom&height=220&color=gradient&customColorList=12&text=AEROSPACE&fontSize=80&fontColor=fff&animation=twinkling&desc=Tiling+WM+Configs%2C+Project-Aware&descSize=18&descAlignY=65&stroke=FFFFFF&strokeWidth=1" alt="aerospace Banner" />
-
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1000&color=00D9FF&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=60&lines=One+workspace+per+project+%C2%B7+auto+monitor%2Flaptop+swap;Configs+for+github.com%2Fnikitabobko%2FAeroSpace" alt="Typing SVG" />
-
-<br>
-
-[![Shell](https://img.shields.io/badge/Shell-89E051?style=for-the-badge&logo=gnubash&logoColor=black&labelColor=0D1117)](https://www.gnu.org/software/bash/)
-[![AeroSpace](https://img.shields.io/badge/AeroSpace-000000?style=for-the-badge&logo=apple&logoColor=white&labelColor=0D1117)](https://github.com/nikitabobko/AeroSpace)
-
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/brand/banner-night.svg">
+  <img alt="aerospace: AeroSpace window manager configs plus scripts for monitor/laptop auto-switching and per-project workspace launching." src=".github/brand/banner-paper.svg" width="100%">
+</picture>
+<br><br>
+<a href="#about"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/brand/tab-about-night.svg"><img alt="about" src=".github/brand/tab-about-paper.svg"></picture></a>
+<a href="#usage"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/brand/tab-usage-night.svg"><img alt="usage" src=".github/brand/tab-usage-paper.svg"></picture></a>
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=26&pause=1000&color=00D9FF&center=true&width=800&lines=%F0%9F%A4%96+WHAT+IS+THIS+%3F" alt="What is this" />
-</div>
-<br>
+<p>
+<a name="about"></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset=".github/brand/section-about-night.svg"><img alt="about" src=".github/brand/section-about-paper.svg" width="100%"></picture>
+</p>
 
 Configs and scripts for [AeroSpace](https://github.com/nikitabobko/AeroSpace), a tiling window manager for macOS. Two things this adds on top of stock AeroSpace:
 
 - **Monitor/laptop auto-swap** — `switch.sh` detects a 4K external display and swaps in the right `aerospace.toml` (and toggles Sketchybar's minimal mode) automatically.
 - **Per-project workspace launcher** — `projects/*.sh` scripts each open the right editor/terminal layout for a given repo (Nvim-config, Zvezda, coast, iris, etc.) in one command.
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=26&pause=1000&color=6A5ACD&center=true&width=800&lines=%E2%9C%A8+USAGE+%E2%9C%A8" alt="Usage" />
-</div>
-<br>
+<p>
+<a name="usage"></a>
+<picture><source media="(prefers-color-scheme: dark)" srcset=".github/brand/section-usage-night.svg"><img alt="usage" src=".github/brand/section-usage-paper.svg" width="100%"></picture>
+</p>
 
 ```sh
 git clone https://github.com/NoamFav/aerospace ~/.config/aerospace
@@ -51,16 +44,17 @@ git clone https://github.com/NoamFav/aerospace ~/.config/aerospace
 
 </details>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
 <div align="center">
-
-<img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=20&pause=1000&color=6A5ACD&center=true&width=800&lines=Thanks+for+stopping+by!" alt="Footer typing" />
-
-<br>
 
 Made with ♥ by [NoamFav](https://github.com/NoamFav)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=100&color=gradient&customColorList=12&section=footer" />
-
 </div>
+
+<br>
+
+<a href="https://nf-software.com">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/brand/footer-night.svg">
+  <img alt="NF Software" src=".github/brand/footer-paper.svg" width="100%">
+</picture>
+</a>
